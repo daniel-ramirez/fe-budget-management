@@ -8,6 +8,7 @@ const Register = (props: any) => {
                 Register
             </Typography>
             <Box
+                id="register-form"
                 component="form"
                 sx={{
                     '& .MuiTextField-root': { marginBottom: '24px', width: '100%' },
@@ -67,10 +68,20 @@ const Register = (props: any) => {
                         />
                     </Grid>
                     <Grid container item>
-                        <Button type="submit" variant="contained" fullWidth>Login</Button>
+                        <Button type="submit" variant="contained" fullWidth>Register</Button>
                     </Grid>
                     <Grid container item>
-                        <Typography>Already have login and password? <Link component={RouterLink} to="../signin">Sign in</Link></Typography>
+                        <Typography>
+                            Already have login and password?
+                            &nbsp;
+                            <Link
+                                component={RouterLink}
+                                to="/signin"
+                                underline="none"
+                            >
+                                Sign in
+                            </Link>
+                        </Typography>
                     </Grid>
                 </Grid>
             </Box>
@@ -78,4 +89,4 @@ const Register = (props: any) => {
     );
 };
 
-export default Register
+export default Register;

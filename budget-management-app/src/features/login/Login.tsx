@@ -9,6 +9,7 @@ const Login = (props: any) => {
                     Login
                 </Typography>
                 <Box
+                    id="login-form"
                     component="form"
                     sx={{
                         '& .MuiTextField-root': { marginBottom: '24px', width: '100%' },
@@ -38,10 +39,20 @@ const Login = (props: any) => {
                             />
                         </Grid>
                         <Grid container item>
-                            <Button type="submit" variant="contained" fullWidth>Register</Button>
+                            <Button type="submit" variant="contained" fullWidth>Login</Button>
                         </Grid>
                         <Grid container item>
-                            <Typography>Don't have an account yet? <Link component={RouterLink} to="../register">Register now</Link></Typography>
+                            <Typography>
+                                Don't have an account yet?
+                                &nbsp;
+                                <Link
+                                    component={RouterLink}
+                                    to="/register"
+                                    underline="none"
+                                >
+                                    Register now
+                                </Link>
+                            </Typography>
                         </Grid>
                     </Grid>
                 </Box>

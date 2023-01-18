@@ -12,7 +12,8 @@ const Layout = (props: any) => {
                 margin: '0px',
                 padding: '0px',
                 maxWidth: '100%'
-            }}>
+            }}
+        >
             <AppBar position="sticky">
                 <Toolbar component="nav">
                     <IconButton
@@ -31,7 +32,12 @@ const Layout = (props: any) => {
                     >
                         Budget Management
                     </Typography>
-                    <Link component={RouterLink} to="signin" underline="none" color="white">
+                    <Link
+                        component={RouterLink}
+                        to="/signin"
+                        underline="none"
+                        color="white"
+                    >
                         Sign in
                     </Link>
                 </Toolbar>
