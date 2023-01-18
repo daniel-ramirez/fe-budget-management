@@ -6,6 +6,8 @@ import Home from './features/home/Home';
 import Login from './features/login/Login';
 import Register from './features/register/Register';
 import './App.css';
+import BankAccounts from './features/bank/BankAccounts';
+import AddBankAccount from './features/bank/AddBankAccount';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/signin' element={<Login />} />
             <Route path='/register' element={<Register />} />
+            <Route path='/bank-accounts' element={<BankAccounts />} />
+            <Route path='/bank-accounts/add' element={<AddBankAccount />} />
           </Routes>
         </Layout>
       </BrowserRouter>
